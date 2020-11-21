@@ -1,2 +1,2 @@
-export * from './country.component';
+export * from './country-page.component';
 export * from './components/menu/menu.component';
