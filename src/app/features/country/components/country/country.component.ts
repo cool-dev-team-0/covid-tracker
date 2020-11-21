@@ -5,19 +5,18 @@ import { Observable } from 'rxjs';
   selector: 'app-country',
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CountryComponent implements OnInit {
   constructor() {}
-  
+
   @Input()
   public country: Observable<string>;
 
   @Output()
   public countryChanged = new EventEmitter<string>();
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   public switchCountry(country: string): void {
     this.countryChanged.emit(country);

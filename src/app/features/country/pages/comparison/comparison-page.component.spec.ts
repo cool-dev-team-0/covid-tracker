@@ -8,9 +8,8 @@ describe('CountryComparisonPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ComparisonPageComponent ]
-    })
-    .compileComponents();
+      declarations: [ComparisonPageComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

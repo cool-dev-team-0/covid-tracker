@@ -11,7 +11,6 @@ import { DataComponent } from './components/data/data.component';
 import { CountryPageComponent } from './pages/country/country-page.component';
 import { ComparisonPageComponent } from './pages/comparison/comparison-page.component';
 
-
 @NgModule({
   imports: [SharedModule, MatSelectModule, NgxChartsModule],
   declarations: [CountryComponent, CountryPageComponent, ComparisonPageComponent, MenuComponent, DataComponent],
