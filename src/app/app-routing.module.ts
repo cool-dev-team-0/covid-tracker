@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CountryComponent } from './features/country';
+import { ComparisonPageComponent, CountryPageComponent } from './features/country';
 import { WorldComponent } from './features/world/world.component';
 
 const routes: Routes = [
@@ -11,7 +11,20 @@ const routes: Routes = [
   },
   {
     path: 'country/:country',
-    component: CountryComponent,
+    component: CountryPageComponent,
+  },
+  {
+    path: 'comparison',
+    children: [
+      {
+        path: ':country',
+        component: ComparisonPageComponent,
+      },
+      {
+        path: ':country/:countryTwo',
+        component: ComparisonPageComponent,
+      },
+    ],
   },
   {
     path: '**',
