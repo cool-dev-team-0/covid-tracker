@@ -16,4 +16,4 @@ import { ComparisonPageComponent } from './pages/comparison/comparison-page.comp
   imports: [SharedModule, MatSelectModule, NgxChartsModule],
   declarations: [CountryComponent, CountryPageComponent, ComparisonPageComponent, MenuComponent, DataComponent],
 })
-export class CountryPageModule {}
+export class CountryModule {}
