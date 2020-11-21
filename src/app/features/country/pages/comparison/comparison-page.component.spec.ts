@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CountryComparisonPageComponent } from './country-comparison-page.component';
+import { ComparisonPageComponent } from './comparison-page.component';
 
 describe('CountryComparisonPageComponent', () => {
-  let component: CountryComparisonPageComponent;
-  let fixture: ComponentFixture<CountryComparisonPageComponent>;
+  let component: ComparisonPageComponent;
+  let fixture: ComponentFixture<ComparisonPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CountryComparisonPageComponent ]
+      declarations: [ ComparisonPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CountryComparisonPageComponent);
+    fixture = TestBed.createComponent(ComparisonPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

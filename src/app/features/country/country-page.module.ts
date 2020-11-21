@@ -7,14 +7,13 @@ import { SharedModule } from '../../shared/shared.module';
 import { CountryComponent } from './components/country/country.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { DataComponent } from './components/data/data.component';
-import { CountryPageComponent } from './country-page.component';
-import { CountryComparisonComponent } from './components/country-comparison/country-comparison.component';
-import { CountryComparisonPageComponent } from './components/country-comparison-page/country-comparison-page.component';
+
+import { CountryPageComponent } from './pages/country/country-page.component';
+import { ComparisonPageComponent } from './pages/comparison/comparison-page.component';
 
 
 @NgModule({
   imports: [SharedModule, MatSelectModule, NgxChartsModule],
-  declarations: [CountryComponent, CountryPageComponent, CountryComparisonComponent, CountryComparisonPageComponent, MenuComponent, DataComponent],
-  exports: [MenuComponent, DataComponent, CountryPageComponent, CountryComparisonComponent, CountryComparisonPageComponent],
+  declarations: [CountryComponent, CountryPageComponent, ComparisonPageComponent, MenuComponent, DataComponent],
 })
 export class CountryPageModule {}

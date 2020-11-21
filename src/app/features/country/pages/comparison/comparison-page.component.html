@@ -1,0 +1,12 @@
+<main class="split" *ngIf="countries$ | async; let countries">
+  <section>
+    <app-country-menu [selected]="countries[0]" (changed)="switchCountry($event, countries[1])"></app-country-menu>
+    <app-country-data [country]="countries[0]"></app-country-data>
+  </section>
+
+  <section>
+    <app-country-menu [selected]="countries[1]" (changed)="switchCountry(countries[0], $event)"></app-country-menu>
+    <app-country-data *ngIf="countries[1]" [country]="countries[1]"></app-country-data>
+  </section>
+</main>
+

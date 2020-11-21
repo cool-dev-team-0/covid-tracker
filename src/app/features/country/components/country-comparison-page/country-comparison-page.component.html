@@ -1,8 +1,0 @@
-<ng-container *ngIf="countryTwo$ | async; let countryTwo">
-  <app-country-comparison
-    [country]="country$"
-    (countryChanged)="switchCountry($event, countryTwo)"
-    [countryTwo]="countryTwo$"
-    (countryTwoChanged)="switchCountryTwo($event)"
-  ></app-country-comparison>
-</ng-container> 
