@@ -4,7 +4,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-country-comparison-page',
   templateUrl: './comparison-page.component.html',
   styleUrls: ['./comparison-page.component.scss']
 })
