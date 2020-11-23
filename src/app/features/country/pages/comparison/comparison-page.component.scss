@@ -1,4 +1,13 @@
 .split {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+
+    & > section {
+      width: 45vw;
+    }
+  }
 }
