@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "covid-tracker-7c53e"
+  },
+  "targets": {
+    "covid-tracker-7c53e": {
+      "hosting": {
+        "covid-tracker": [
+          "covid-tracker-7c53e"
+        ]
+      }
+    }
+  }
+}

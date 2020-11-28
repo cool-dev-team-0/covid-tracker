@@ -4,6 +4,16 @@
 
 export const environment = {
   production: false,
+  firebase: {
+    apiKey: "AIzaSyBtJjpjnNkXV3lJrrKT2_3IxqUJ1BsydaU",
+    authDomain: "covid-tracker-7c53e.firebaseapp.com",
+    databaseURL: "https://covid-tracker-7c53e.firebaseio.com",
+    projectId: "covid-tracker-7c53e",
+    storageBucket: "covid-tracker-7c53e.appspot.com",
+    messagingSenderId: "211927158732",
+    appId: "1:211927158732:web:63680181a269c016c45769",
+    measurementId: "G-THM15EF5VT"
+  }
 };
 
 /*
